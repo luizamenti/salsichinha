@@ -11,12 +11,14 @@ body {
 
 header {
     height: 100vh;
-    top: 0px;
+    padding: 0px;
+    position: relative;
 }
 
 header div {
-    margin: 10px;
-    margin-top: 25%;
+    margin-left: 15px;
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -34,7 +36,8 @@ header img {
     height: 192px;
     position: absolute;
     right: 0px;
-    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 article {
@@ -44,11 +47,13 @@ article {
     padding-bottom: 10px;
     padding-left: 24px;
     padding-right: 24px;
+    box-shadow: 0px 0px 13px -5px black;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     margin-bottom: 50px;
     margin-left: 50%;
     transform: translateX(-50%);
+    box-sizing: border-box;
 }
 
 article p {
@@ -60,6 +65,10 @@ article img, article iframe {
     width: calc(100% - 30px);
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+article iframe {
+    height: 400px;
 }
 
 article h2 {
